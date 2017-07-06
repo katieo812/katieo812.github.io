@@ -1,0 +1,7 @@
+BODY {background-color: #CFCFD0;
+      color: #000000;
+      font-family: Arial, sans-serif;}
+H1 {color: #003399; font-variant: small-caps;}
+A:link {text-decoration: underline; color:#003399}
+A:visited {text-decoration: underline; color:#3399FF}
+A:hover {text-decoration: underline; color:#FF3300}

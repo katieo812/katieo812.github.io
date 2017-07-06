@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Adjective Practice </title>
+  <link rel=stylesheet href="MyStyles.css"type"text/css">
+</head>
+<body>
+<h1>Adjective Practice</h1>
+<form  id="form2" action=" ">
+  <p>
+    <strong>Choose the correct adjective for each sentence.</strong>
+    <img src="arc.png" align="right">
+  </p>
+<p>Mes amis sont _____.</p>
+<input type="radio" name="variable" value="0" />content<br />
+<input type="radio" name="variable" value="0" />sportive<br />
+<input type="radio" name="variable" value="25" />grands<br />
+<input type="radio" name="variable" value="0" />mignonnes<br />
+
+<p>Est-ce que ton p&egrave;re est _____?</p>
+<input type="radio" name="sub" value="25" />intelligent<br />
+<input type="radio" name="sub" value="0" />belles<br />
+<input type="radio" name="sub" value="0" />gentille<br />
+<input type="radio" name="sub" value="0" />blonds<br />
+
+<p>Julie et Gabrielle ne sont pas ______!</p>
+<input type="radio" name="con" value="0" />petite<br />
+<input type="radio" name="con" value="25" />m&eacute;chantes<br />
+<input type="radio" name="con" value="0" />timide<br />
+<input type="radio" name="con" value="0" />bruns<br />
+
+<p>Madame Lefort est ______. </p>
+<input type="radio" name="ifstate" value="0" />jeunes<br />
+<input type="radio" name="ifstate" value="0" />riches<br />
+<input type="radio" name="ifstate" value="0" />joli<br />
+<input type="radio" name="ifstate" value="25" />fatigu&eacute;e<br />
+
+<input type="submit" value="Submit">
+</form>
+<script>
+document.getElementById("form2").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+
+
+	   result = variable + sub + con + ifstate;
+
+	document.getElementById("grade").innerHTML = result;
+
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+<a href="finalproject.html"> Home </a>
+</body>
+</html>
